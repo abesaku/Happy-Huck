@@ -1,0 +1,263 @@
+html,
+
+header {
+    background-image: url(images/background2.jpg);
+    height: 100vh;
+    width: 100vw;
+    //background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    color: #ffbf00;
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header p {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+nav ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  position: top;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+  list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+body h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #3d5cdb;
+}
+
+a:hover{
+    box-shadow: 5px 5px 10px #c0c0c0;
+}
+
+.introduction {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.introduction p {
+    line-height: 30px;
+}
+
+.intro1 {
+    height: 422px;
+    margin-top: 80px;
+}
+
+.intro1 img {
+    float: left;
+    margin-right: 40px;
+}
+
+.intro1 p {
+    width: 420px;
+    height: 250px;
+    overflow: hidden;
+    margin: 40px;
+    
+}
+
+.intro1 a{
+    text-decoration: none;
+    border: 5px solid #3d5cde;
+    border-radius: 12px;
+    padding: 5px 38px;
+    color: #fff;
+    background-color: #3d5cde;
+}
+
+.intro2 {
+    height: 422px;
+}
+
+.intro2 img {
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.intro2 p{
+    width: 420px;
+    height: 215px;
+    float: left;
+    margin: 40px;
+}
+
+.intro2 a{
+    text-decoration: none;
+    border: 5px solid #ffbf00;
+    border-radius: 12px;
+    padding: 5px 38px;
+    color: #fff;
+    background-color: #ffbf00;
+}
+
+.course {
+    background-color: #d7eeff;
+    height: 940px;
+}
+
+.course1{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.course2 {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.course a {
+    text-decoration: none;
+    padding: 13px 30px;
+    border-style: 0px solid;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.course img {
+    width: 110px;
+    margin: 30px;
+}
+
+.html {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    float: left;
+}
+
+.css {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+.unity {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+.ruby {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.js {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    float: left;
+}
+
+.swift {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+.go {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+.html a {
+    background-color: #ff773e;
+}
+
+.css a {
+    background-color: #00bfff;
+}
+
+.unity a {
+    background-color: #222;
+}
+
+.ruby a {
+    background-color: #f00;
+}
+
+.js a {
+    background-color: #fc3;
+}
+
+.swift a {
+    background-color: #f66;
+}
+
+.go a {
+    background-color: #6cc;
+}
+
+.access {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: #3d5cdb;
+    margin: 20px 0px;
+}
