@@ -25,6 +25,7 @@ header p {
     margin-top: 0px;
     margin-bottom: 0px;
     font-style: italic;
+    font-family: "Futura";
 }
 
 nav ul{
@@ -37,7 +38,10 @@ nav ul{
 nav li {
   display: inline-block;
   margin-right: 30px;
+  margin-top: 30px;;
   list-style-type: none;
+  font-family: "Futura";
+  font-size: 30px;
 }
 
 nav a {
@@ -53,12 +57,10 @@ body {
 
 body h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: 50px;
     color: #3d5cdb;
-}
-
-a:hover{
-    box-shadow: 5px 5px 10px #c0c0c0;
+    font-family: "Futura";
+    font-weight: lighter;
 }
 
 .introduction {
@@ -68,6 +70,15 @@ a:hover{
 
 .introduction p {
     line-height: 30px;
+}
+
+.introduction a {
+    width: 420px;
+    margin: 0 auto;
+}
+
+.introduction a:hover{
+    box-shadow: 5px 5px 10px #c0c0c0;
 }
 
 .intro1 {
@@ -143,6 +154,10 @@ a:hover{
     border-style: 0px solid;
     border-radius: 12px;
     color: #fff;
+}
+
+.course a:hover{
+    box-shadow: 5px 5px 10px #c0c0c0;
 }
 
 .course img {
