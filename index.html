@@ -2,22 +2,23 @@
 <html lang="en">
 <link rel="stylesheet" href="style.css">
 
-<head class="bg-slider">
+<head>
     <meta charset="UTF-8">
     <title>Happy Huck</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <style>
          @font-face {
              font-family: "Futura";
              src: local("fonts/Futura-Med.ttf")
                     }
     </style>
-    
+    <link href="style.css" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="jquery.bgswitcher.js"></script>
+<script src="dist/jquery.bgswitcher.js"></script>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <header>
+<div class="bg-slider">
  <nav>
      <ul>
          <li><a href="#introduction">Introduction</a></li>
@@ -26,8 +27,9 @@
          <li><a href="#access">Access</a></li>
      </ul>
  </nav>
- <h1>Happy Huck</h1>
+   <img src="images/logo.png" alt="" width="900px">
     <p>We are Web Designers.</p>
+    </div>
 </header>
 
 <body>
@@ -47,8 +49,8 @@
         Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
         WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
         自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
-        <a href="">会員登録</a>
        </p>
+       <a href="">会員登録</a>
     </div>
     <img src="images/introduction_002.jpg" alt="" width="500px">
     </section>
@@ -114,6 +116,8 @@
 </body>
     <footer>&copy;2019 Happy Hack Inc.</footer>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
 <script>
 jQuery(function($) {
     $('.bg-slider').bgSwitcher({
