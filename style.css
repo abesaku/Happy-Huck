@@ -264,10 +264,15 @@ body h2 {
     background-color: #6cc;
 }
 
-.slider{
+.slider ul{
     margin: 100px auto;
     width: 80%;
 }
+
+.slider li {
+    list-style-type: none;
+}
+
 .slider img{
     height: auto;
     width: 337px;

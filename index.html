@@ -15,6 +15,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="dist/jquery.bgswitcher.js"></script>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="js/slick.css" rel="stylesheet" type="text/css">
 </head>
 
 <header>
@@ -112,13 +113,17 @@
     
     <section class="images" id="images"><!--       slickかけらもできない-->
         <h2>Images</h2>
-    <ul class="slider">
-        <li><img src="images/background2.jpg",  alt="" width="337px"></li>
+        <div class="slider">
+    <button type=”button” class=”slick-prev”>Previous</button>
+    <ul>
+        <li><img src="images/background2.jpg"  alt="" width="337px"></li>
         <li><img src="images/background3.jpg" alt="" width="337px"></li>
         <li><img src="images/background4.jpg" alt="" width="337px"></li>
         <li><img src="images/background5.jpg" alt="" width="337px"></li>
         <li><img src="images/hero.jpg" alt="" width="337px"></li>
     </ul>
+       <button type=”button” class=”slick-next”>Next</button>
+        </div>
     </section>
     
     <section class="access" id="access">
@@ -151,8 +156,6 @@
 <script src="particles.js-master/particles.js" ></script>
 <script src="particles.js-master/setting.js" ></script>
 <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
-<link href="js/slick.css" rel="stylesheet" type="text/css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js">
     $('.slider').slick({
     autoplay:true,
