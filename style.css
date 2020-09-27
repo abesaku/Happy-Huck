@@ -1,7 +1,6 @@
 html,
 
 header {
-    background-image: url(images/background2.jpg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -41,6 +40,7 @@ header p {
 	background-size: cover;
 	align-items: center;
 }
+
 .bg-slider__title{
 	color: #fff;
 	font-size: 48px;
