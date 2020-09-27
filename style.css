@@ -183,110 +183,75 @@ body h2 {
     box-shadow: 5px 5px 10px #c0c0c0;
 }
 
+.course1 {
+    text-align: center;
+}
+
+.course1 li{
+    display: inline-block;
+}
+
+.course2 {
+    text-align: center;
+}
+
+.course2 li {
+    display: inline-block;
+}
+
 .course img {
     width: 110px;
     margin: 30px;
 }
 
-.html {
+.element {
     width: 240px;
     height: 340px;
     background-color: #fff;
     border-radius: 10px;
     margin: 30px 20px;
     text-align: center;
-    float: left;
 }
 
-.css {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    overflow: hidden;
-    float: left;
+#particles-js{
+ height: 100vh;
+ width: 100vw;
+ background-color: #fff;
 }
 
-.unity {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    overflow: hidden;
-    float: left;
+.content{
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ height: 100px;
+ width: 50vw;
 }
 
-.ruby {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.js {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    float: left;
-}
-
-.swift {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    float: left;
-    overflow: hidden;
-}
-
-.go {
-    width: 240px;
-    height: 340px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 30px 20px;
-    text-align: center;
-    overflow: hidden;
-    float: left;
-}
-
-.html a {
+#html a {
     background-color: #ff773e;
 }
 
-.css a {
+#css a {
     background-color: #00bfff;
 }
 
-.unity a {
+#unity a {
     background-color: #222;
 }
 
-.ruby a {
+#ruby a {
     background-color: #f00;
 }
 
-.js a {
+#js a {
     background-color: #fc3;
 }
 
-.swift a {
+#swift a {
     background-color: #f66;
 }
 
-.go a {
+#go a {
     background-color: #6cc;
 }
 
