@@ -16,8 +16,6 @@ header img {
     margin: 0 auto;
     display: block;
     padding: absolute;
-    top: 50%;
-    transform: translateY(100%)
 }
 
 header p {
@@ -29,6 +27,9 @@ header p {
     font-style: italic;
     font-family: "Futura";
     padding: absolute;
+}
+
+.title {
     top: 50%;
     transform: translateY(100%)
 }

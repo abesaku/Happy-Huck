@@ -27,28 +27,11 @@
          <li><a href="#access">Access</a></li>
      </ul>
  </nav>
-  <div>
+  <div class="title">
    <img src="images/logo.png" alt="" width="900px">
     <p>We are Web Designers.</p>
   </div>
-</div>
-
-<script src="js/jquery.bgswitcher.js"></script>
-
-<script>
-jQuery(function($) {
-    $('.bg-slider').bgSwitcher({
-        images: ['images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg'], 
-        Interval: 5000,//画像から画像への切り替えの時間
-        start: true,//
-        loop: true,
-        shuffle: false,
-        effect: "fade",
-        duration: 1000,
-        easing: "swing",
-    });
-});
-</script>
+    </div>
 
 
 </header>
@@ -139,4 +122,25 @@ jQuery(function($) {
     
 </body>
     <footer>&copy;2019 Happy Hack Inc.</footer>
+    
+    <script src="js/jquery.bgswitcher.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+     $(".bg-slider").bgSwitcher({
+        images: ['images/background2.jpg',
+                 'images/background3.jpg',
+                 'images/background4.jpg',
+                 'images/background5.jpg'], 
+        Interval: 5000,//画像から画像への切り替えの時間
+        start: true,//
+        loop: true,
+        shuffle: false,
+        effect: "fade",
+        duration: 1000,
+        easing: "swing",
+    });
+});
+</script>
+
 </html>
