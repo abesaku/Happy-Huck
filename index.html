@@ -19,7 +19,7 @@
 </head>
 
 <header>
-<div class="bg-slider"><!--class名必要ない？かも-->
+<div class="bg-slider">
  <nav>
      <ul>
          <li><a href="#introduction">Introduction</a></li>
@@ -61,7 +61,7 @@
     </section>
     
     <section class="course" id="course">
-        <h2>Course</h2><!--        ボタンが下に詰まってしまう-->
+        <h2>Course</h2><!--        画像サイズひとつずつ指定-->
         <ul id="course1">
         <li class="element"id="html">
            <img src="images/html.png" alt="">
@@ -114,7 +114,6 @@
     <section class="images" id="images"><!--       slickかけらもできない-->
         <h2>Images</h2>
         <div class="slider">
-    <button type=”button” class=”slick-prev”>Previous</button>
     <ul>
         <li><img src="images/background2.jpg"  alt="" width="337px"></li>
         <li><img src="images/background3.jpg" alt="" width="337px"></li>
@@ -122,7 +121,6 @@
         <li><img src="images/background5.jpg" alt="" width="337px"></li>
         <li><img src="images/hero.jpg" alt="" width="337px"></li>
     </ul>
-       <button type=”button” class=”slick-next”>Next</button>
         </div>
     </section>
     
@@ -157,12 +155,14 @@
 <script src="particles.js-master/setting.js" ></script>
 <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/slick.min.js">
+    $(document).ready(function() {
     $('.slider').slick({
     autoplay:true,
     autoplaySpeed:5000,
     dots:true,
     slidesToShow:4,//一度に出す画像の数
     slidesToScroll:1,//スクロールする画像の数
+    });
 });
 </script>
 
