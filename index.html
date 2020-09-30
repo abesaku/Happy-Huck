@@ -15,7 +15,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="dist/jquery.bgswitcher.js"></script>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<link href="js/slick.css" rel="stylesheet" type="text/css">
+<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="slick/slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 </head>
 
 <header>
@@ -41,7 +43,7 @@
     <section class="introduction" id="introduction">
     <h2>Introduction</h2>
     <div class="intro1">
-    <img src="images/introduction_001.jpg" alt="" width="500px">
+        <img src="images/introduction_001.jpg" alt="" width="500px">
         <p>
         Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
         特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
@@ -50,63 +52,67 @@
         <a href="">会員登録</a>
     </div>
     <div class="intro2">
+      <div class="intro">
        <p>
         Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
         WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
         自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
        </p>
        <a href="">会員登録</a>
+      </div>
+      <div class="intro_image2">
+       <img src="images/introduction_002.jpg" alt="" width="500px">
+      </div>
     </div>
-    <img src="images/introduction_002.jpg" alt="" width="500px">
     </section>
     
     <section class="course" id="course">
         <h2>Course</h2><!--        画像サイズひとつずつ指定-->
-        <ul id="course1">
+        <div class="course_group">
+        <ul>
         <li class="element"id="html">
-           <img src="images/html.png" alt="">
+           <img src="images/html.png" alt="html">
             <p>HTMLコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         
         <li class="element" id="css">
-           <img src="images/css.png" alt="">
+           <img src="images/css.png" alt="css">
             <p>CSSコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         
         <li class="element" id="unity">
-            <img src="images/unity.png" alt="">
+            <img src="images/unity.png" alt="unity">
             <p>Unityコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         
         <li class="element" id="ruby">
-            <img src="images/ruby.png" alt="">
+            <img src="images/ruby.png" alt="ruby">
             <p>Rubyコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
-        </ul>
         
-        <ul id="course2">
         <li class="element" id="js">
-            <img src="images/js.png" alt="">
+            <img src="images/js.png" alt="java script">
             <p>JavaScriptコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         
         <li class="element" id="swift">
-            <img src="images/swift.png" alt="">
+            <img src="images/swift.png" alt="swift">
             <p>Swiftコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         
         <li class="element" id="go">
-            <img src="images/go.png" alt="">
+            <img src="images/go.png" alt="go">
             <p>Goコース</p>
             <a href="#course">このコースを受ける</a>
         </li>
         </ul>
+        </div>
         <div id="particles-js"></div>
     </section>
    
@@ -114,7 +120,7 @@
     <section class="images" id="images"><!--       slickかけらもできない-->
         <h2>Images</h2>
         <div class="slider">
-    <ul>
+    <ul class="slider">
         <li><img src="images/background2.jpg"  alt="" width="337px"></li>
         <li><img src="images/background3.jpg" alt="" width="337px"></li>
         <li><img src="images/background4.jpg" alt="" width="337px"></li>
@@ -151,10 +157,13 @@
     });
 });
 </script>
+
+
 <script src="particles.js-master/particles.js" ></script>
 <script src="particles.js-master/setting.js" ></script>
-<link href="js/slick-theme.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/slick.min.js">
+
+
+<script type="text/javascript" src="slick/slick.min.js">
     $(document).ready(function() {
     $('.slider').slick({
     autoplay:true,
@@ -163,7 +172,7 @@
     slidesToShow:4,//一度に出す画像の数
     slidesToScroll:1,//スクロールする画像の数
     });
-});
+});    
 </script>
 
 </html>

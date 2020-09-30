@@ -1,5 +1,10 @@
 html,
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     height: 100vh;
     width: 100vw;
@@ -8,6 +13,7 @@ header {
     position: relative;
     top: 0px;
     right: 0px;
+    left: 0px;
 }
 
 header img {
@@ -74,9 +80,10 @@ nav a {
 }
 
 body {
-  width: 100%;
-  background-size: cover;
-  position: relative;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    
 }
 
 body h2 {
@@ -135,37 +142,40 @@ body h2 {
 
 .intro2 {
     height: 422px;
-    text-align: center;
-    float: left;
-}
-
-.intro2 img {
-    overflow: hidden;
-    margin: 40px;
 }
 
 .intro2 p{
     width: 400px;
     height: 185px;
-    margin: 40px 90px 40px 40px;
-    text-align: left;
+    margin: 40px;
     font-size: 14px;
+}
+
+.intro_image2 {
+    overflow: hidden;
+    margin: 40px;
 }
 
 .intro2 a{
     text-decoration: none;
-    border: 5px solid #ffbf00;
+    border: 0px solid #ffbf00;
     border-radius: 12px;
-    padding: 5px 38px;
+    padding: 10px 43px;
     color: #fff;
     background-color: #ffbf00;
+    text-align: center;
+    display: block;
+    margin: 30px 200px;
+}
+
+.intro {
+    float: left;
 }
 
 .course {
     background-color: #d7eeff;
+    width: 100vw;
     height: 940px;
-    position: relative;
-    z-index: 1;
 }
 
 .course p {
@@ -190,10 +200,11 @@ body h2 {
 
 .course ul {
     width: 100%;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 }
 
 .course li{
@@ -204,6 +215,10 @@ body h2 {
 .course img {
     height: 160px;
     margin: 30px;
+}
+
+.course h2 {
+    padding-top: 50px;
 }
 
 .element {
@@ -223,7 +238,7 @@ body h2 {
     top: 0px;
     right: 0px;
     display: block;
-    z-index: 0;
+    z-index: -1;
 }
 
 .content{
@@ -234,8 +249,18 @@ body h2 {
  width: 50vw;
 }
 
+.course_group {
+    width: 1170px;
+    height: 740px;
+}
+
 #html a {
     background-color: #ff773e;
+}
+
+#html img {
+    width: 100px;
+    height: 140px;
 }
 
 #css a {
@@ -243,27 +268,57 @@ body h2 {
 }
 
 #css img {
-    height: 160px;
+    width: 100px;
+    height: 140px;
 }
 
 #unity a {
     background-color: #222;
 }
 
+#unity img {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
+
 #ruby a {
-    background-color: #f00;
+    background-color: #ed5f59;
+}
+
+#ruby img {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
 }
 
 #js a {
     background-color: #fc3;
 }
 
+#js img {
+    width: 100px;
+    height: 140px;
+}
+
 #swift a {
     background-color: #f66;
 }
 
+#swift img {
+    width: 100px;
+    height: 88px;
+    padding: 25px;
+}
+
 #go a {
     background-color: #6cc;
+}
+
+#go img {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
 }
 
 .slider ul{
