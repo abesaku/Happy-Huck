@@ -348,12 +348,32 @@ body h2 {
 }
 
 /*slick setting*/
-/*
 .slick-prev:before,
 .slick-next:before {
+    z-index: 100;
     color: #000;
 }
-*/
+
+.slick-prev{
+            left: calc((100vw - 300px) / 2);
+            z-index: 100;
+            
+        }
+/*        :before,*/
+        
+.slick-next{
+            right: calc((100vw - 300px) / 2);
+            z-index: 99;
+            color: #000;
+        }
+/*        :before*/
+            
+        
+.slick-dots{
+/*          height: 25px;*/
+        display: flex;
+/*        list-style: none;*/
+        }
 
 .access {
     text-align: center;
