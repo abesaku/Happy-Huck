@@ -40,23 +40,23 @@ header p {
 }
 
 .bg-slider {
-	width: 100vw;
-	height: 100vh;
-	background-position:center center;
-	background-size: cover;
-	align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
 }
 
-.bg-slider__title{
-	color: #fff;
-	font-size: 48px;
-	line-height: 1.5;
-	font-weight: bold;
-	text-align:center;
-	text-shadow: 1px 1px 1px #000;
+.bg-slider__title {
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
 }
 
-nav ul{
+nav ul {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
@@ -66,18 +66,18 @@ nav ul{
 }
 
 nav li {
-  display: inline-block;
-  margin-right: 30px;
-  margin-top: 30px;
-  list-style-type: none;
-  font-family: "Futura";
-  font-size: 25px;
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 30px;
+    list-style-type: none;
+    font-family: "Futura";
+    font-size: 28px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav a:hover {
@@ -88,7 +88,7 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    
+
 }
 
 body h2 {
@@ -113,8 +113,8 @@ body h2 {
     font-weight: bold;
 }
 
-.introduction a:hover{
-    box-shadow: 5px 5px 10px #c0c0c0;
+.introduction a:hover {
+    box-shadow: 3px 3px 10px 3px #c0c0c0;
 }
 
 .intro1 {
@@ -137,7 +137,7 @@ body h2 {
     text-align: left;
 }
 
-.intro1 a{
+.intro1 a {
     text-decoration: none;
     border: 0px solid #3d5cde;
     border-radius: 12px;
@@ -150,7 +150,7 @@ body h2 {
     height: 422px;
 }
 
-.intro2 p{
+.intro2 p {
     width: 400px;
     height: 185px;
     margin: 40px;
@@ -162,7 +162,7 @@ body h2 {
     margin: 40px;
 }
 
-.intro2 a{
+.intro2 a {
     text-decoration: none;
     border: 0px solid #ffbf00;
     border-radius: 12px;
@@ -179,10 +179,11 @@ body h2 {
 }
 
 .course {
-    background-color: #d7eeff;
+    background-color: rgba(186, 213, 245, 0.6);
     width: 100vw;
-    height: 940px;
-    padding: 0px 30px;
+/*    height: 100vh;*/
+    position: relative;
+    z-index: -1;
 }
 
 .course p {
@@ -201,7 +202,7 @@ body h2 {
     right: 20px;
 }
 
-.course a:hover{
+.course a:hover {
     box-shadow: 5px 5px 10px #c0c0c0;
 }
 
@@ -214,7 +215,7 @@ body h2 {
     justify-content: center;
 }
 
-.course li{
+.course li {
     list-style-type: none;
     display: block;
     box-shadow: 1px 1px 3px 1px #c0c0c0;
@@ -224,6 +225,7 @@ body h2 {
     height: 160px;
     margin: 30px;
 }
+
 
 .element {
     width: 240px;
@@ -235,7 +237,7 @@ body h2 {
     position: relative;
 }
 
-#particles-js{
+#particles-js {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -244,6 +246,14 @@ body h2 {
     display: block;
     z-index: -1;
 }
+
+/*
+#course canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+*/
 
 #html a {
     background-color: #ff773e;
@@ -312,25 +322,38 @@ body h2 {
     padding: 25px;
 }
 
-.slider ul{
-    margin: 100px auto;
+.images {
+    position: relative;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider {
+    margin: 0 auto;
     width: 80%;
-    
+    position: relative;
+    z-index: 100;
 }
 
-.slider li {
-    list-style-type: none;
-}
+/*.slider li {*/
+/*    list-style-type: none;*/
+/*}*/
 
-.slider img{
+.slider img {
     height: auto;
-    width: 337px;
+    /*    width: 337px;*/
+    width: 100%;
 }
+
 /*slick setting*/
+/*
 .slick-prev:before,
 .slick-next:before {
     color: #000;
 }
+*/
 
 .access {
     text-align: center;

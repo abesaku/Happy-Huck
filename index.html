@@ -5,174 +5,218 @@
 <head>
     <meta charset="UTF-8">
     <title>Happy Huck</title>
-    <style>/*        フォント読み込みあってる？*/
-         @font-face {
-             font-family: "Futura";
-             src: local("fonts/Futura-Med.ttf")
-                    }
+    <style>
+        /*        フォント読み込みあってる？*/
+        @font-face {
+            font-family: "Futura";
+            src: local("fonts/Futura-Med.ttf")
+        }
     </style>
     <link href="style.css" rel="stylesheet">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="dist/jquery.bgswitcher.js"></script>
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
-<link href="slick/slick.css" rel="stylesheet" type="text/css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!--    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">-->
+    <link href="slick/slick.css" rel="stylesheet" type="text/css">
+    <link rel=“stylesheet” href=“//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css”>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css”>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <style>
+        .slick-prev{
+            left: calc((100vw - 300px) / 2);
+            z-index: 100;
+            
+        }
+/*        :before,*/
+        
+        .slick-next
+/*        :before*/
+            {
+            right: calc((100vw - 300px) / 2);
+            z-index: 99;
+            color: #000;
+        }
+        
+        .slick-dots
+            {
+/*          height: 25px;*/
+            display: flex;
+        }
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        $(function() {
+            ScrollReveal().reveal('.fuwatto', {
+                distance: '10px',
+                origin: 'top',
+                duration: 2000
+            });
+        });
+    </script>
 </head>
 
 <header>
-<div class="bg-slider">
- <nav>
-     <ul>
-         <li><a href="#introduction">Introduction</a></li>
-         <li><a href="#course">Course</a></li>
-         <li><a href="#images">Images</a></li>
-         <li><a href="#access">Access</a></li>
-     </ul>
- </nav>
-  <div class="title">
-   <img src="images/logo.png" alt="" width="900px">
-    <p>We are Web Designers.</p>
-  </div>
+    <div class="bg-slider">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#course">Courses</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <img src="images/logo.png" alt="" width="900px">
+            <p>We are Web Designers.</p>
+        </div>
     </div>
-
-
 </header>
 
+
 <body>
-    <section class="introduction" id="introduction">
-    <h2>Introduction</h2>
-    <div class="intro1">
-        <img src="images/introduction_001.jpg" alt="" width="500px">
-        <p>
-        Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
-        特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
-        誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。<br>
-        </p>
-        <a href="">会員登録</a>
-    </div>
-    <div class="intro2">
-      <div class="intro">
-       <p>
-        Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
-        WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-        自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
-       </p>
-       <a href="">会員登録</a>
-      </div>
-      <div class="intro_image2">
-       <img src="images/introduction_002.jpg" alt="" width="500px">
-      </div>
-    </div>
-    </section>
-    
-    <section class="course" id="course">
-        <h2>Course</h2><!--        画像サイズひとつずつ指定-->
-        <div class="course_group">
-        <ul>
-        <li class="element"id="html">
-           <img src="images/html.png" alt="html">
-            <p>HTMLコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="css">
-           <img src="images/css.png" alt="css">
-            <p>CSSコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="unity">
-            <img src="images/unity.png" alt="unity">
-            <p>Unityコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="ruby">
-            <img src="images/ruby.png" alt="ruby">
-            <p>Rubyコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="js">
-            <img src="images/js.png" alt="java script">
-            <p>JavaScriptコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="swift">
-            <img src="images/swift.png" alt="swift">
-            <p>Swiftコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        
-        <li class="element" id="go">
-            <img src="images/go.png" alt="go">
-            <p>Goコース</p>
-            <a href="#course">このコースを受ける</a>
-        </li>
-        </ul>
+    <section class="introduction fuwatto" id="introduction">
+        <h2>Introduction</h2>
+        <div class="intro1">
+            <img src="images/introduction_001.jpg" alt="" width="500px">
+            <p>
+                Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+                特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+                誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。<br>
+            </p>
+            <a href="">会員登録</a>
         </div>
+        <div class="intro2">
+            <div class="intro">
+                <p>
+                    Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+                    WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+                    自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
+                </p>
+                <a href="">会員登録</a>
+            </div>
+            <div class="intro_image2">
+                <img src="images/introduction_002.jpg" alt="" width="500px">
+            </div>
+        </div>
+    </section>
+
+    <section class="course fuwatto" id="course">
+
+        <h2>Course</h2>
+        <div class="course_bg"></div>
+        <ul>
+            <li class="element" id="html">
+                <img src="images/html.png" alt="html">
+                <p>HTMLコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="css">
+                <img src="images/css.png" alt="css">
+                <p>CSSコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="unity">
+                <img src="images/unity.png" alt="unity">
+                <p>Unityコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="ruby">
+                <img src="images/ruby.png" alt="ruby">
+                <p>Rubyコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="js">
+                <img src="images/js.png" alt="java script">
+                <p>JavaScriptコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="swift">
+                <img src="images/swift.png" alt="swift">
+                <p>Swiftコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+
+            <li class="element" id="go">
+                <img src="images/go.png" alt="go">
+                <p>Goコース</p>
+                <a href="#course">このコースを受ける</a>
+            </li>
+        </ul>
         <div id="particles-js"></div>
     </section>
-   
-    
-    <section class="images" id="images"><!--       slickかけらもできない-->
+
+
+    <section class="images fuwatto" id="images">
+        <!--       slickかけらもできない-->
         <h2>Images</h2>
         <div class="slider">
-    <ul class="slider">
-        <li><img src="images/background2.jpg"  alt="" width="337px"></li>
-        <li><img src="images/background3.jpg" alt="" width="337px"></li>
-        <li><img src="images/background4.jpg" alt="" width="337px"></li>
-        <li><img src="images/background5.jpg" alt="" width="337px"></li>
-        <li><img src="images/hero.jpg" alt="" width="337px"></li>
-    </ul>
+            <!--        <li>-->
+            <img src="images/background2.jpg" alt="">
+            <!--        </li>-->
+            <!--        <li>-->
+            <img src="images/background3.jpg" alt="">
+            <!--        </li>-->
+            <!--        <li>-->
+            <img src="images/background4.jpg" alt="">
+            <!--        </li>-->
+            <!--        <li>-->
+            <img src="images/background5.jpg" alt="">
+            <!--        </li>-->
+            <!--        <li>-->
+            <img src="images/hero.jpg" alt="">
+            <!--        </li>-->
         </div>
     </section>
-    
-    <section class="access" id="access">
-        <h2>Access</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3280.328163125856!2d135.49261!3d34.696902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zbGlmZSBpcyB0ZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sen!2sjp!4v1600918943467!5m2!1sen!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
-    
-</body>
-    <footer>&copy;2019 Happy Hack Inc.</footer>
-    
-    <script src="js/jquery.bgswitcher.js"></script>
 
+    <section class="access fuwatto" id="access">
+        <h2>Access</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3280.328163125856!2d135.49261!3d34.696902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zbGlmZSBpcyB0ZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sen!2sjp!4v1600918943467!5m2!1sen!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+
+<footer>&copy;2019 Happy Hack Inc.</footer>
+
+<script src="dist/jquery.bgswitcher.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-     $(".bg-slider").bgSwitcher({
-        images: ['images/background2.jpg',
-                 'images/background3.jpg',
-                 'images/background4.jpg',
-                 'images/background5.jpg'], 
-        Interval: 5000,//画像から画像への切り替えの時間
-        start: true,
-        loop: true,
-        shuffle: false,
-        effect: "fade",
-        duration: 1000,
-        easing: "swing",
+        $(".bg-slider").bgSwitcher({
+            images: ['images/background2.jpg',
+                'images/background3.jpg',
+                'images/background4.jpg',
+                'images/background5.jpg'
+            ],
+            Interval: 5000, //画像から画像への切り替えの時間
+            start: true,
+            loop: true,
+            shuffle: false,
+            effect: "fade",
+            duration: 1000,
+            easing: "swing",
+        });
     });
-});
 </script>
 
+<script src="particles.js-master/particles.min.js"></script>
+<script src="particles.js-master/setting.js"></script>
 
-<script src="particles.js-master/particles.js" ></script>
-<script src="particles.js-master/setting.js" ></script>
 
-
-<script type="text/javascript" src="slick/slick.min.js">
-    $(document).ready(function() {
+<script src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    //    $(document).ready(function() {
     $('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:5000,
-    dots:true,
-    slidesToShow:4,//一度に出す画像の数
-    slidesToScroll:1,//スクロールする画像の数
+//        autoplay: true,
+//        autoplaySpeed:5000,
+        dots: true,
+        slidesToShow: 4, //一度に出す画像の数
+        slidesToScroll: 1, //スクロールする画像の数
+        arrows: true,
     });
-});    
+    //});    
 </script>
-
+</body>
 </html>
