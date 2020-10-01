@@ -77,6 +77,11 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: #3d5cdb;
 }
 
 body {
@@ -92,6 +97,7 @@ body h2 {
     color: #3d5cdb;
     font-family: "Futura";
     font-weight: lighter;
+    padding-top: 50px;
 }
 
 .introduction {
@@ -176,6 +182,7 @@ body h2 {
     background-color: #d7eeff;
     width: 100vw;
     height: 940px;
+    padding: 0px 30px;
 }
 
 .course p {
@@ -210,15 +217,12 @@ body h2 {
 .course li{
     list-style-type: none;
     display: block;
+    box-shadow: 1px 1px 3px 1px #c0c0c0;
 }
 
 .course img {
     height: 160px;
     margin: 30px;
-}
-
-.course h2 {
-    padding-top: 50px;
 }
 
 .element {
@@ -239,19 +243,6 @@ body h2 {
     right: 0px;
     display: block;
     z-index: -1;
-}
-
-.content{
- position: absolute;
- top: 50%;
- left: 25%;
- height: 100px;
- width: 50vw;
-}
-
-.course_group {
-    width: 1170px;
-    height: 740px;
 }
 
 #html a {
@@ -329,7 +320,6 @@ body h2 {
 
 .slider li {
     list-style-type: none;
-    display: inline;
 }
 
 .slider img{
