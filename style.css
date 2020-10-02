@@ -103,6 +103,7 @@ body h2 {
 .introduction {
     width: 1040px;
     margin: 0 auto;
+    padding: 25px;
 }
 
 .introduction p {
@@ -138,31 +139,40 @@ body h2 {
 }
 
 .intro1 a {
+    width: 130px;
+    height: 30px;
     text-decoration: none;
     border: 0px solid #3d5cde;
     border-radius: 12px;
     padding: 10px 43px;
     color: #fff;
     background-color: #3d5cde;
+    display: block;
+    margin: 30px 130px 30px auto;
+    text-align: center;
+    font-size: 22px;
 }
 
 .intro2 {
     height: 422px;
+    padding: 25px;
 }
 
 .intro2 p {
     width: 400px;
     height: 185px;
-    margin: 40px;
-    font-size: 14px;
+    margin: 50px;
+    letter-spacing: -1.52px;
 }
 
 .intro_image2 {
     overflow: hidden;
-    margin: 40px;
+    margin: 25px;
 }
 
 .intro2 a {
+    width: 130px;
+    height: 30px;
     text-decoration: none;
     border: 0px solid #ffbf00;
     border-radius: 12px;
@@ -171,10 +181,11 @@ body h2 {
     background-color: #ffbf00;
     text-align: center;
     display: block;
-    margin: 30px 200px;
+    margin: 30px auto;
+    font-size: 22px;
 }
 
-.intro {
+.intro2-1 {
     float: left;
 }
 
@@ -331,7 +342,7 @@ body h2 {
 }
 
 .slider {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 80%;
     position: relative;
     z-index: 100;
@@ -350,7 +361,6 @@ body h2 {
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
-    z-index: 100;
     color: #000;
 }
 
