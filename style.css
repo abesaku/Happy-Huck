@@ -5,6 +5,100 @@ html,
     padding: 0;
 }
 
+
+/*~480px：スマホ縦-------------------------------------------*/
+@media (max-width:480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .title img {
+        width: 70vw;
+        margin: auto;
+    }
+
+    .title p {
+        font-size: 100%;
+    }
+
+    .introduction {
+        width: 100%;
+        float: none;
+        max-width: 480px;
+    }
+
+    .introduction img {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .introduction p {
+        width: 90vw;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .intro1-1 {
+        width: 90vw;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slider {
+        margin: 100px auto;
+        width: 80%;
+        position: relative;
+        z-index: 100;
+    }
+
+    .slider img {
+        height: auto;
+        /*    width: 337px;*/
+        width: 100%;
+    }
+
+    /*slick setting*/
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000;
+    }
+
+    .slick-prev {
+        left: calc((100vw - 300px) / 2);
+        z-index: 100;
+
+    }
+
+    /*        :before,*/
+
+    .slick-next {
+        right: calc((100vw - 300px) / 2);
+        z-index: 99;
+        color: #000;
+    }
+
+    /*        :before*/
+
+
+    .slick-dots {
+        /*          height: 25px;*/
+        display: flex;
+        /*        list-style: none;*/
+    }
+
+
+    .access iframe {
+        width: 100vw;
+    }
+}
+
 header {
     height: 100vh;
     width: 100vw;
@@ -101,9 +195,11 @@ body h2 {
 }
 
 .introduction {
-    width: 1040px;
+    /*    width: 1080px;*/
     margin: 0 auto;
     padding: 25px;
+    max-width: 1080px;
+    overflow: hidden;
 }
 
 .introduction p {
@@ -119,7 +215,7 @@ body h2 {
 }
 
 .intro1 {
-    height: 422px;
+    height: 100%;
     margin-top: 80px;
     text-align: center;
 }
@@ -129,12 +225,17 @@ body h2 {
     margin-right: 40px;
 }
 
+.intro1-1 {
+    width: 400px;
+    overflow: hidden;
+    padding: 40px;
+}
+
 .intro1 p {
     width: 420px;
-    height: 215px;
+    height: 224px;
     overflow: hidden;
-    margin: 40px;
-    padding-left: 40px;
+    /*    padding-left: 40px;*/
     text-align: left;
 }
 
@@ -148,26 +249,34 @@ body h2 {
     color: #fff;
     background-color: #3d5cde;
     display: block;
-    margin: 30px 130px 30px auto;
     text-align: center;
     font-size: 22px;
+    margin: 0 auto;
 }
 
 .intro2 {
-    height: 422px;
+    height: 100%;
     padding: 25px;
+    overflow: hidden;
+}
+
+.intro2 img {
+    float: right;
+    margin: 25px;
+    /*    margin-left: 40px;*/
 }
 
 .intro2 p {
-    width: 400px;
+    max-width: 470px;
     height: 185px;
-    margin: 50px;
+    /*    margin: 40px;*/
     letter-spacing: -1.52px;
 }
 
-.intro_image2 {
-    overflow: hidden;
-    margin: 25px;
+.intro2-1 {
+    width: 400px;
+    float: right;
+    margin: 40px;
 }
 
 .intro2 a {
@@ -185,14 +294,10 @@ body h2 {
     font-size: 22px;
 }
 
-.intro2-1 {
-    float: left;
-}
-
 .course {
     background-color: rgba(186, 213, 245, 0.6);
     width: 100vw;
-/*    height: 100vh;*/
+    /*    height: 100vh;*/
     position: relative;
     z-index: -1;
 }
@@ -237,6 +342,11 @@ body h2 {
     margin: 30px;
 }
 
+.courses {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
 
 .element {
     width: 240px;
@@ -250,12 +360,16 @@ body h2 {
 
 #particles-js {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0px;
     right: 0px;
     display: block;
     z-index: -1;
+}
+
+.course_bg {
+    position: relative;
 }
 
 /*
@@ -364,26 +478,28 @@ body h2 {
     color: #000;
 }
 
-.slick-prev{
-            left: calc((100vw - 300px) / 2);
-            z-index: 100;
-            
-        }
+.slick-prev {
+    left: calc((100vw - 300px) / 2);
+    z-index: 100;
+
+}
+
 /*        :before,*/
-        
-.slick-next{
-            right: calc((100vw - 300px) / 2);
-            z-index: 99;
-            color: #000;
-        }
+
+.slick-next {
+    right: calc((100vw - 300px) / 2);
+    z-index: 99;
+    color: #000;
+}
+
 /*        :before*/
-            
-        
-.slick-dots{
-/*          height: 25px;*/
-        display: flex;
-/*        list-style: none;*/
-        }
+
+
+.slick-dots {
+    /*          height: 25px;*/
+    display: flex;
+    /*        list-style: none;*/
+}
 
 .access {
     text-align: center;

@@ -57,6 +57,7 @@
             });
         });
     </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <header>
@@ -83,15 +84,16 @@
         <div class="intro1">
             <img src="images/introduction_001.jpg" alt="" width="500px">
             <div class="intro1-1">
-            <p>
+                <p>
                 Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
                 特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
                 誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。<br>
-            </p>
+                </p>
             <a href="">会員登録</a>
             </div>
         </div>
         <div class="intro2">
+           <img src="images/introduction_002.jpg" alt="" width="500px">
             <div class="intro2-1">
                 <p>
                     Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
@@ -100,16 +102,15 @@
                 </p>
                 <a href="">会員登録</a>
             </div>
-            <div class="intro_image2">
-                <img src="images/introduction_002.jpg" alt="" width="500px">
-            </div>
         </div>
     </section>
 
     <section class="course fuwatto" id="course">
-
+        <div class="course_bg">
+        <div id="particles-js"></div>
         <h2>Course</h2>
-        <div class="course_bg"></div>
+<!--        <div class="course_bg"></div>-->
+        <div class="courses">
         <ul>
             <li class="element" id="html">
                 <img src="images/html.png" alt="html">
@@ -153,7 +154,8 @@
                 <a href="#course">このコースを受ける</a>
             </li>
         </ul>
-        <div id="particles-js"></div>
+        </div>
+        </div>
     </section>
 
 
@@ -221,6 +223,14 @@
         slidesToShow: 4, //一度に出す画像の数
         slidesToScroll: 1, //スクロールする画像の数
         arrows: true,
+        responsive: [{
+            breakpoint: 481,
+            settings: {
+                slideToShow: 1,
+                slideToScroll: 1,
+            }
+        }]
+        
     });
     //});    
 </script>
