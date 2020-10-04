@@ -179,6 +179,28 @@
             <img src="images/hero.jpg" alt="">
             <!--        </li>-->
         </div>
+<!--
+        <script type="text/javascript">
+    //    $(document).ready(function() {
+    $('.slider').slick({
+//        autoplay: true,
+//        autoplaySpeed:5000,
+        dots: true,
+        slidesToShow: 4, //一度に出す画像の数
+        slidesToScroll: 1, //スクロールする画像の数
+        arrows: true,
+        responsive: [{
+            breakpoint: 481,
+            settings: {
+                slideToShow: 1,
+                slideToScroll: 1,
+            }
+        }]
+        
+    });
+    //});    
+</script>
+-->
     </section>
 
     <section class="access fuwatto" id="access">
@@ -220,15 +242,22 @@
 //        autoplay: true,
 //        autoplaySpeed:5000,
         dots: true,
-        slidesToShow: 4, //一度に出す画像の数
-        slidesToScroll: 1, //スクロールする画像の数
+//        slidesToShow: 4, //一度に出す画像の数
+//        slidesToScroll: 1, //スクロールする画像の数
         arrows: true,
         responsive: [{
+            breakpoint: 1400,
+            setting: {
+                slidesToShow: 4, //一度に出す画像の数
+                slidesToScroll: 1, //スクロールする画像の数
+            } 
+        },{
             breakpoint: 481,
             settings: {
                 slideToShow: 1,
                 slideToScroll: 1,
             }
+            
         }]
         
     });
