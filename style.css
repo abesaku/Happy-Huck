@@ -6,125 +6,6 @@ html,
 }
 
 
-/*~480px：スマホ縦-------------------------------------------*/
-@media screen and (max-width:480px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    .title img {
-        width: 70vw;
-        margin: auto;
-    }
-
-    .title p {
-        font-size: 100%;
-    }
-    
-    .title {
-        top: 50%;
-        transform: translateY(50%)
-    }
-
-    .introduction {
-        width: 90%;
-        float: none;
-        max-width: 480px;
-        padding: 0px;
-    }
-
-    .introduction img {
-        width: 80%;
-        float: none;
-    }
-
-    .introduction p {
-        max-width: 400px;
-        padding-left: 0px;
-        margin: 0px;
-        overflow: none;
-        font-size: 13px;
-    } 
-    
-    .intro1 {
-        padding: 0px;
-        width: 440px;
-    }
-    
-    .intro1 img {
-        margin-right: 0px;
-        float: none;
-    }
-    
-    .intro1-1 {
-        padding: 0px;
-        float: none;
-    }
-    
-    intro2 {
-        padding: 0px;
-    }
-    
-    .intro2-1 {
-        margin: 0px;
-    }
-
-    .slick-list {
-        overflow: hidden;
-    }
-
-    .slider {
-        margin: 100px auto;
-        width: 80%;
-        position: relative;
-        z-index: 100;
-    }
-
-    .slider img {
-        height: auto;
-        /*    width: 337px;*/
-        width: 100%;
-    }
-
-    /*slick setting*/
-    .slick-prev:before,
-    .slick-next:before {
-        color: #000;
-    }
-
-    .slick-prev {
-        left: calc((100vw - 300px) / 2);
-        z-index: 100;
-
-    }
-
-    /*        :before,*/
-
-    .slick-next {
-        right: calc((100vw - 300px) / 2);
-        z-index: 99;
-        color: #000;
-    }
-
-    /*        :before*/
-
-
-    .slick-dots {
-        /*          height: 25px;*/
-        display: flex;
-        /*        list-style: none;*/
-    }
-
-
-    .access iframe {
-        width: 100vw;
-    }
-}
 
 header {
     height: 100vh;
@@ -227,6 +108,7 @@ body h2 {
     padding: 25px;
     max-width: 1080px;
     overflow: hidden;
+    text-align: center;
 }
 
 .introduction p {
@@ -246,6 +128,7 @@ body h2 {
     padding: 25px;
     margin-top: 80px;
     overflow: hidden;
+    text-align: center;
 }
 
 .intro1 img {
@@ -254,7 +137,7 @@ body h2 {
 }
 
 .intro1-1 {
-    width: 400px;
+    max-width: 300px;
     float: left;
     overflow: hidden;
     padding: 40px;
@@ -262,7 +145,7 @@ body h2 {
 }
 
 .intro1 p {
-    max-width: 400px;
+/*    max-width: 400px;*/
     height: 100%;
     overflow: hidden;
     text-align: left;
@@ -281,7 +164,7 @@ body h2 {
     display: block;
     text-align: center;
     font-size: 22px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .intro2 {
@@ -297,7 +180,7 @@ body h2 {
 }
 
 .intro2-1 {
-    max-width: 400px;
+    max-width: 300px;
     float: right;
     margin: 40px;
 }
@@ -307,6 +190,7 @@ body h2 {
     height: 100%;
     /*    margin: 40px;*/
     letter-spacing: -1.52px;
+    text-align: left;
 }
 
 .intro2 a {
@@ -545,3 +429,129 @@ footer {
     margin: 20px 0px;
     font-family: "Futura";
 }
+
+/*~480px：スマホ縦-------------------------------------------*/
+@media screen and (max-width:480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .title img {
+        width: 70vw;
+/*        margin: 0 auto;*/
+    }
+
+    .title p {
+        font-size: 100%;
+    }
+    
+    .title {
+        top: 50%;
+        transform: translateY(300%)
+    }
+
+    .introduction {
+        width: 90vw;
+        float: none;
+        max-width: 480px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .introduction img {
+        width: 80%;
+        float: none;
+    }
+
+    .introduction p {
+        max-width: 400px;
+        padding-left: 0px;
+        margin: 0px;
+        overflow: none;
+        font-size: 10px;
+        line-height: 15px;
+    } 
+    
+    .intro1 {
+        padding: 0px;
+        width: 440px;
+    }
+    
+    .intro1 img {
+        margin-right: 0px;
+        float: none;
+    }
+    
+    .intro1-1 {
+        padding: 20px;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    intro2 {
+        padding: 0px;
+    }
+    
+    .intro2-1 {
+        margin: 0px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slider {
+        margin: 100px auto;
+        width: 80%;
+        position: relative;
+        z-index: 100;
+    }
+
+    .slider img {
+        height: auto;
+        /*    width: 337px;*/
+        width: 100%;
+    }
+
+    /*slick setting*/
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000;
+    }
+
+    .slick-prev {
+        left: calc((100vw - 300px) / 2);
+        z-index: 100;
+
+    }
+
+    /*        :before,*/
+
+    .slick-next {
+        right: calc((100vw - 300px) / 2);
+        z-index: 99;
+        color: #000;
+    }
+
+    /*        :before*/
+
+
+    .slick-dots {
+        /*          height: 25px;*/
+        display: flex;
+        /*        list-style: none;*/
+    }
+
+
+    .access iframe {
+        width: 100vw;
+    }
+}
+
