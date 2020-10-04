@@ -39,7 +39,7 @@ html,
     }
 
     .introduction img {
-        width: 90vw;
+        width: 80%;
         float: none;
     }
 
@@ -53,6 +53,7 @@ html,
     
     .intro1 {
         padding: 0px;
+        width: 440px;
     }
     
     .intro1 img {
@@ -257,12 +258,14 @@ body h2 {
     float: left;
     overflow: hidden;
     padding: 40px;
+    text-align: center;
 }
 
 .intro1 p {
     max-width: 400px;
     height: 100%;
     overflow: hidden;
+    text-align: left;
 /*    padding-left: 40px;*/
 }
 
