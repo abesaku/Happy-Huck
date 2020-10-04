@@ -27,29 +27,50 @@ html,
     }
     
     .title {
-    top: 50%;
-    transform: translateY(100%)
-}
+        top: 50%;
+        transform: translateY(50%)
+    }
 
     .introduction {
-        width: 100%;
+        width: 90%;
         float: none;
         max-width: 480px;
+        padding: 0px;
     }
 
     .introduction img {
         width: 90vw;
-        text-align: center;
+        float: none;
     }
 
     .introduction p {
-        width: 90vw;
+        max-width: 400px;
         padding-left: 0px;
         margin: 0px;
+        overflow: none;
+        font-size: 13px;
+    } 
+    
+    .intro1 {
+        padding: 0px;
     }
-
+    
+    .intro1 img {
+        margin-right: 0px;
+        float: none;
+    }
+    
     .intro1-1 {
-        width: 90vw;
+        padding: 0px;
+        float: none;
+    }
+    
+    intro2 {
+        padding: 0px;
+    }
+    
+    .intro2-1 {
+        margin: 0px;
     }
 
     .slick-list {
@@ -221,8 +242,9 @@ body h2 {
 
 .intro1 {
     height: 100%;
+    padding: 25px;
     margin-top: 80px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .intro1 img {
@@ -231,17 +253,17 @@ body h2 {
 }
 
 .intro1-1 {
-    max-width: 480px;
+    width: 400px;
+    float: left;
     overflow: hidden;
     padding: 40px;
 }
 
 .intro1 p {
     max-width: 400px;
-    height: 224px;
+    height: 100%;
     overflow: hidden;
-    /*    padding-left: 40px;*/
-    text-align: left;
+/*    padding-left: 40px;*/
 }
 
 .intro1 a {
@@ -271,17 +293,17 @@ body h2 {
     /*    margin-left: 40px;*/
 }
 
-.intro2 p {
-    max-width: 470px;
-    height: 185px;
-    /*    margin: 40px;*/
-    letter-spacing: -1.52px;
-}
-
 .intro2-1 {
-    width: 400px;
+    max-width: 400px;
     float: right;
     margin: 40px;
+}
+
+.intro2 p {
+    max-width: 400px;
+    height: 100%;
+    /*    margin: 40px;*/
+    letter-spacing: -1.52px;
 }
 
 .intro2 a {
