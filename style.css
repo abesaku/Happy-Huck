@@ -454,6 +454,10 @@ footer {
         top: 50%;
         transform: translateY(300%)
     }
+    
+    body h2 {
+        font-size: 30px;
+    }
 
     .introduction {
         width: 90vw;
@@ -464,18 +468,24 @@ footer {
     }
 
     .introduction img {
-        width: 80%;
+        width: 100%;
         float: none;
     }
 
     .introduction p {
-        max-width: 400px;
+        width: 90%;
         padding-left: 0px;
         margin: 0px;
         overflow: none;
         font-size: 10px;
-        line-height: 15px;
+        line-height: 2;
     } 
+    
+    .introduction a {
+        font-size: 13px;
+        width: 70px;
+        height: 20px;
+    }
     
     .intro1 {
         padding: 0px;
@@ -493,14 +503,81 @@ footer {
         margin: 0 auto;
     }
     
-    intro2 {
+    .intro2 {
         padding: 0px;
+    }
+    
+    .intro2 img {
+        margin: 40px 0px;
     }
     
     .intro2-1 {
         margin: 0px;
         float: none;
         margin: 0 auto;
+    }
+    
+    .course li {
+        width: 160px;
+        height: 240px;
+    }
+    
+    .course p {
+        font-size: 10px;
+    }
+    
+    .course a {
+        width: 100px;
+        font-size: 10px;
+        padding: 13px 0px;
+        border-radius: 20px;
+        top: 170px;
+        right: 30px;
+    }
+    
+    .course img {
+        padding: 0px;
+    }
+    
+    #html img {
+        width: 50px;
+        height: 70.42px;
+    }
+    
+    #css img {
+        width: 50px;
+        height: 77.12px;
+        margin-bottom: 25px;
+    }
+    
+    #unity img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+    }
+    
+    #ruby img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+    }
+    
+    #js img {
+        width: 50px;
+        height: 70.11px;
+    }
+    
+    #swift img {
+        width: 50px;
+        height: 44.44px;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    
+    #go img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
     }
 
     .slick-list {
@@ -552,6 +629,7 @@ footer {
 
     .access iframe {
         width: 100vw;
+        margin-top: 40px;
     }
 }
 
