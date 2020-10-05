@@ -38,7 +38,7 @@ header p {
 
 .title {
     top: 50%;
-    transform: translateY(100%)
+    transform: translateY(120%)
 }
 
 .bg-slider {
@@ -446,7 +446,7 @@ footer {
     
     .title {
         top: 50%;
-        transform: translateY(300%)
+        transform: translateY(400%)
     }
     
     body h2 {
