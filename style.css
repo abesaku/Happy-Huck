@@ -99,7 +99,7 @@ body h2 {
     color: #3d5cdb;
     font-family: "Futura";
     font-weight: lighter;
-    padding-top: 50px;
+    margin: 40px;
 }
 
 .introduction {
@@ -117,6 +117,17 @@ body h2 {
 
 .introduction a {
     font-weight: bold;
+    width: 130px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 5px 20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px auto;
+    
+    color: #fff;
 }
 
 .introduction a:hover {
@@ -137,7 +148,7 @@ body h2 {
 }
 
 .intro1-1 {
-    max-width: 300px;
+    max-width: 400px;
     float: left;
     overflow: hidden;
     padding: 40px;
@@ -153,18 +164,8 @@ body h2 {
 }
 
 .intro1 a {
-    width: 130px;
-    height: 30px;
-    text-decoration: none;
     border: 0px solid #3d5cde;
-    border-radius: 12px;
-    padding: 10px 43px;
-    color: #fff;
     background-color: #3d5cde;
-    display: block;
-    text-align: center;
-    font-size: 22px;
-    margin: 30px auto;
 }
 
 .intro2 {
@@ -175,14 +176,13 @@ body h2 {
 
 .intro2 img {
     float: right;
-    margin: 25px;
-    /*    margin-left: 40px;*/
+    margin-left: 40px;
 }
 
 .intro2-1 {
-    max-width: 300px;
+    max-width: 400px;
     float: right;
-    margin: 40px;
+    padding: 40px;
 }
 
 .intro2 p {
@@ -194,24 +194,14 @@ body h2 {
 }
 
 .intro2 a {
-    width: 130px;
-    height: 30px;
-    text-decoration: none;
     border: 0px solid #ffbf00;
-    border-radius: 12px;
-    padding: 10px 43px;
-    color: #fff;
     background-color: #ffbf00;
-    text-align: center;
-    display: block;
-    margin: 30px auto;
-    font-size: 22px;
 }
 
 .course {
     background-color: rgba(186, 213, 245, 0.6);
     width: 100vw;
-    /*    height: 100vh;*/
+    height: 100%;
     position: relative;
     z-index: -1;
 }
@@ -370,7 +360,7 @@ body h2 {
 }
 
 .slider {
-    margin: 100px auto;
+    margin: 80px auto;
     width: 80%;
     position: relative;
     z-index: 100;
@@ -419,6 +409,10 @@ body h2 {
     text-align: center;
 }
 
+.access h2 {
+    margin-top: 100px;
+}
+
 iframe {
     margin-bottom: 45px;
 }
@@ -457,6 +451,7 @@ footer {
     
     body h2 {
         font-size: 30px;
+        margin: 40px;
     }
 
     .introduction {
@@ -470,11 +465,10 @@ footer {
     .introduction img {
         width: 100%;
         float: none;
+        margin: 0px;
     }
 
     .introduction p {
-        width: 90%;
-        padding-left: 0px;
         margin: 0px;
         overflow: none;
         font-size: 10px;
@@ -483,17 +477,16 @@ footer {
     
     .introduction a {
         font-size: 13px;
-        width: 70px;
+        width: 80px;
         height: 20px;
+        border-radius: 10px;
     }
     
     .intro1 {
         padding: 0px;
-        width: 440px;
     }
     
     .intro1 img {
-        margin-right: 0px;
         float: none;
     }
     
@@ -507,18 +500,14 @@ footer {
         padding: 0px;
     }
     
-    .intro2 img {
-        margin: 40px 0px;
-    }
-    
     .intro2-1 {
-        margin: 0px;
+        padding: 20px;
         float: none;
         margin: 0 auto;
     }
     
     .course li {
-        width: 160px;
+        width: 45%;
         height: 240px;
     }
     
@@ -532,11 +521,16 @@ footer {
         padding: 13px 0px;
         border-radius: 20px;
         top: 170px;
-        right: 30px;
+        left: 25px;
     }
     
     .course img {
         padding: 0px;
+    }
+    
+    .element {
+        margin: 10px 5px;
+        border-radius: 5px;
     }
     
     #html img {
@@ -585,7 +579,7 @@ footer {
     }
 
     .slider {
-        margin: 100px auto;
+        margin: 30px auto;
         width: 80%;
         position: relative;
         z-index: 100;
@@ -593,7 +587,6 @@ footer {
 
     .slider img {
         height: auto;
-        /*    width: 337px;*/
         width: 100%;
     }
 
@@ -625,11 +618,15 @@ footer {
         display: flex;
         /*        list-style: none;*/
     }
+    
+    .access h2 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
 
 
     .access iframe {
         width: 100vw;
-        margin-top: 40px;
     }
 }
 
