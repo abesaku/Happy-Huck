@@ -516,7 +516,7 @@ footer {
     }
     
     .element {
-        margin: 10px 5px;
+        margin: 10px auto;
         border-radius: 5px;
     }
     
