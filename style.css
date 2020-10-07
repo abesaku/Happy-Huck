@@ -1,9 +1,9 @@
 html,
 
 @font-face {
-            font-family: "Futura";
-            src: local("fonts/Futura-Med.ttf")
-        }
+    font-family: "Futura";
+    src: local("fonts/Futura-Med.ttf")
+}
 
 * {
     margin: 0;
@@ -67,8 +67,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 25px;
-    margin-top: 30px;
+    margin: 30px 12px;
     list-style-type: none;
     font-family: "Futura";
     font-size: 28px;
@@ -97,7 +96,7 @@ body h2 {
     color: #3d5cdb;
     font-family: "Futura";
     font-weight: lighter;
-    margin: 40px;
+    padding: 40px;
 }
 
 .introduction {
@@ -254,10 +253,6 @@ body h2 {
     max-width: 1170px;
 }
 
-.course h2 {
-    padding-top: 40px;
-}
-
 .element {
     width: 240px;
     height: 340px;
@@ -398,10 +393,6 @@ body h2 {
     text-align: center;
 }
 
-.access h2 {
-    margin-top: 100px;
-}
-
 iframe {
     margin-bottom: 45px;
 }
@@ -415,10 +406,6 @@ footer {
 
 /*~480px：スマホ縦-------------------------------------------*/
 @media screen and (max-width:480px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
 
     header nav {
         display: none;
@@ -431,10 +418,9 @@ footer {
     .title p {
         font-size: 100%;
     }
-    
+
     body h2 {
         font-size: 30px;
-        margin: 40px;
     }
 
     .introduction {
@@ -452,104 +438,98 @@ footer {
     }
 
     .introduction p {
-        margin: 0px;
         overflow: none;
         font-size: 10px;
         line-height: 2;
-    } 
-    
+    }
+
     .introduction a {
         font-size: 13px;
         width: 80px;
         height: 20px;
         border-radius: 10px;
     }
-    
+
     .intro1 {
         padding: 0px;
     }
-    
+
     .intro1 img {
         float: none;
     }
-    
+
     .intro1-1 {
         padding: 20px;
         float: none;
         margin: 0 auto;
     }
-    
+
     .intro2 {
         padding: 0px;
     }
-    
+
     .intro2-1 {
         padding: 20px;
         float: none;
         margin: 0 auto;
     }
-    
+
     .course li {
         width: 45%;
         height: 240px;
     }
-    
+
     .course p {
         font-size: 10px;
         top: 60%;
     }
-    
+
     .course a {
         width: 100px;
         font-size: 10px;
         padding: 13px 0px;
         border-radius: 20px;
     }
-    
-    .course img {
-        padding: 0px;
-    }
-    
+
     .element {
         margin: 10px auto;
         border-radius: 5px;
     }
-    
+
     #html img {
         width: 50px;
         height: 70.42px;
     }
-    
+
     #css img {
         width: 50px;
         height: 77.12px;
-        margin-bottom: 25px;
     }
-    
+
     #unity img {
         width: 50px;
         height: 50px;
         padding: 0px;
     }
-    
+
     #ruby img {
         width: 50px;
         height: 50px;
         padding: 0px;
     }
-    
+
     #js img {
         width: 50px;
         height: 70.11px;
     }
-    
+
     #swift img {
         width: 50px;
         height: 44.44px;
         padding: 0px;
         padding-bottom: 20px;
     }
-    
+
     #go img {
         width: 50px;
         height: 50px;
@@ -581,7 +561,7 @@ footer {
     .slick-prev {
         left: calc((100vw - 300px) / 2);
     }
-    
+
     .slick-next {
         right: calc((100vw - 300px) / 2);
         color: #000;
@@ -590,15 +570,9 @@ footer {
     .slick-dots {
         display: flex;
     }
-    
-    .access h2 {
-        margin-top: 80px;
-        margin-bottom: 20px;
-    }
 
     .access iframe {
         width: 100vw;
-        height:250px;
+        height: 250px;
     }
 }
-
