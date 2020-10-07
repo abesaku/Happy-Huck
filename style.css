@@ -204,7 +204,9 @@ body h2 {
 }
 
 .course p {
+    color: #333;
     font-weight: bold;
+    font-size: 13px;
     position: absolute;
     top: 65%;
     right: 50%;
